@@ -6,10 +6,10 @@ import plotly.figure_factory as ff
 import streamlit as st
 
 # Load Dataframes
-df_NEWSOSites_2023_ = pd.read_pickle('Data/Dashboard Dataframes/df_NEWSOSites_2023_.pkl')
-df_SurveyLength_2023 = pd.read_pickle('Data/Dashboard Dataframes/df_SurveyLength_2023.pkl')
-df_SurveyEase_2023 = pd.read_pickle('Data/Dashboard Dataframes/df_SurveyEase_2023.pkl')
-df_SOPartFreq_2023 = pd.read_pickle('Data/Dashboard Dataframes/df_SOPartFreq_2023.pkl')
+df_NEWSOSites_2023_ = pd.read_pickle('df_NEWSOSites_2023_.pkl')
+df_SurveyLength_2023 = pd.read_pickle('df_SurveyLength_2023.pkl')
+df_SurveyEase_2023 = pd.read_pickle('df_SurveyEase_2023.pkl')
+df_SOPartFreq_2023 = pd.read_pickle('df_SOPartFreq_2023.pkl')
 df_SOPartFreq_2023 = df_SOPartFreq_2023.sort_values(by='count', ascending=False).replace({'I have never participated in Q&A on Stack Overflow':'Never used it','A few times per month or weekly':'A few times','Less than once per month or monthly':'Less than once per month'})
 
 st.markdown('<p style="color:#0000e6;font-size:50px;text-align:center;"><strong>StackOverflow Dashboard </strong></p>',unsafe_allow_html=True)
