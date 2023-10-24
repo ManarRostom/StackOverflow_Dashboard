@@ -12,7 +12,7 @@ df_SurveyEase_2023 = pd.read_pickle('df_SurveyEase_2023.pkl')
 df_SOPartFreq_2023 = pd.read_pickle('df_SOPartFreq_2023.pkl')
 df_SOPartFreq_2023 = df_SOPartFreq_2023.sort_values(by='count', ascending=False).replace({'I have never participated in Q&A on Stack Overflow':'Never used it','A few times per month or weekly':'A few times','Less than once per month or monthly':'Less than once per month'})
 
-st.markdown('<p style="color:#0000e6;font-size:50px;text-align:center;"><strong>StackOverflow Dashboard </strong></p>',unsafe_allow_html=True)
+st.markdown('<p style="color:#2929a3;font-size:50px;text-align:center;"><strong>StackOverflow Dashboard </strong></p>',unsafe_allow_html=True)
 
 col1_1 , col1_2 , col1_3 = st.columns([2,3,2])
 col2_1 , col2_2 , col2_3 = st.columns([2,3,2])
